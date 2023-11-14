@@ -1,0 +1,26 @@
+{
+	"id": "siemens-paw-snmp",
+	"name": "siemens-paw-snmp",
+	"shortname": "PAW Streamdeck Integration for SNMP",
+	"description": "PAW Streamdeck Integration for SNMP",
+	"version": "0.1.0",
+	"license": "MIT",
+	"repository": "",
+	"bugs": "",
+	"maintainers": [
+		{
+			"name": "PAW Administrators",
+			"email": ""
+		}
+	],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "0.0.0",
+		"entrypoint": "../src/index.js"
+	},
+	"legacyIds": [],
+	"manufacturer": "Siemens",
+	"products": ["PAW", "SNMP"],
+	"keywords": []
+}
