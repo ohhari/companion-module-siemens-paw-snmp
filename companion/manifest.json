@@ -5,7 +5,7 @@
 	"description": "PAW Streamdeck Integration for SNMP",
 	"version": "0.1.0",
 	"license": "MIT",
-	"repository": "",
+	"repository": "git+https://github.com/ohhari/companion-module-siemens-paw-snmp",
 	"bugs": "",
 	"maintainers": [
 		{
