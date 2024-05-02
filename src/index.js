@@ -74,7 +74,7 @@ class PAWSNMPInstance extends InstanceBase {
 	//Set state of device
 	setState(s_host, s_oid, s_value) {
 		var session = new Session({ host: s_host, community: 'private' })
-		session.set({ oid: s_oid, value: s_value, type: 71 }, (error, data) => {
+		session.set({ oid: s_oid, value: s_value, type: 66 }, (error, answer) => {//71
 			if (error) {
 				this.log('error', JSON.stringify(error))
 			} else {
