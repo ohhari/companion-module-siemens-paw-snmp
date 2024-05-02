@@ -21,16 +21,15 @@ export default function (instance) {
 					id: 'state',
 					default: '0',
 					tooltip: 'Select State',
-					choices: 
-						[
-							{id: 0, label: 'Off'},
-							{id: 1, label: 'On'}
-						],
+					choices: [
+						{ id: 0, label: 'Off' },
+						{ id: 1, label: 'On' },
+					],
 					minChoicesForSearch: 2,
 				},
 			],
 			callback: async (event) => {
-				instance.log('debug','Set state of Device ' + event.options.device + ' to ' + event.options.state)
+				instance.log('debug', 'Set state of Device ' + event.options.device + ' to ' + event.options.state)
 				instance.setState(event.options.device, '.1.3.6.1.4.1.40595.1.1.2.0', event.options.state)
 			},
 		},
@@ -49,7 +48,7 @@ export default function (instance) {
 				},
 			],
 			callback: async (event) => {
-				instance.log('debug','Get state from Device ' + event.options.device)
+				instance.log('debug', 'Get state from Device ' + event.options.device)
 				instance.getState(event.options.device, '.1.3.6.1.4.1.40595.1.1.2')
 			},
 		},
